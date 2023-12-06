@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+body,
+ul {
+  background-color: #a7bcb9;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+/** NAV-BAR */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #a7bcb9;
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.411);
+}
+.nav-bar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 8% 15px;
+
+  width: 84%;
+}
+.nav-bar .panel .list {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-bar nav .logo {
+  font-size: 30px;
+  font-family: "Edu TAS Beginner", cursive;
+}
+
+nav .logo i {
+  margin-right: 10px;
+}
+/** NAV-BAR */
+/* *LOGİN SECTİON */
+.login-section {
+  margin: 150px 20% auto;
+  text-align: center;
+  padding-bottom: 30px;
+  z-index: -1;
+}
+.login-section .form-input {
+  width: 50%;
+  margin-bottom: 20px;
+  height: 30px;
+}
+.login-section .submit-button {
+  background-color: orangered;
+  border: none;
+  width: 30%;
+  height: 30px;
+  border-radius: 3px;
+  color: aliceblue;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.login-section .submit-button:hover {
+  background-color: rgb(236, 64, 1);
+  transform: scale(1.05);
+  transition: ease 0.4s;
+}
+/* *LOGİN SECTİON */
+/* *FEATURE SECTİON */
+main .features {
+  margin: 50px 12%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.features .item {
+  display: flex;
+  column-gap: 30px;
+  max-width: 100%;
+}
+.item .icon {
+  width: 10%;
+  text-align: center;
+}
+.icon i {
+  padding-top: 25%;
+  color: orangered;
+}
+.item .descp {
+  width: 90%;
+  text-align: left;
+}
+.descp h3 {
+  font-weight: 1200;
+}
+
+/* *FEATURE SECTİON */
+/* *İNFO VİDEOS SECTİON */
+.infovideos-section div {
+  text-align: center;
+}
+#video {
+  height: 300px;
+  width: 560px;
+}
+/* *İNFO VİDEOS SECTİON */
+/* *PRİCİNG SECTİON */
+
+.pricing {
+  margin: 50px 10%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  height: 700px;
+  justify-content: space-between;
+  text-align: center;
+}
+.card {
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 700px;
+}
+.card-header {
+  height: 50px;
+  font-size: larger;
+}
+.card-text {
+  height: 350px;
+  font-size: 20px;
+}
+.card-text button {
+  width: 40%;
+  background-color: orangered;
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.card-text button:hover {
+  background-color: darkorange;
+  transform: scale(1.2, 1.2);
+}
+.pricing img {
+  width: 100%;
+  image-rendering: crisp-edges;
+  height: 300px;
+}
+
+/* *PRİCİNG SECTİON */
+
+/* *RESPONSİVE */
+@media (max-width: 992px) {
+  .nav-bar nav {
+    margin: 12px 7% 12px;
+    width: 86%;
+  }
+  .nav-bar .panel .list {
+    column-gap: 30px;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  .nav-bar nav .logo {
+    font-size: 25px;
+  }
+  nav .logo i {
+    margin-right: 9px;
+  }
+  .login-section .form-input {
+    width: 55%;
+    margin-bottom: 17px;
+  }
+  .login-section {
+    margin: 150px 17% auto;
+  }
+  .login-section .submit-button {
+    font-size: 13px;
+    width: 35%;
+    font-weight: 700;
+  }
+  main .features {
+    margin: 45px 9%;
+  }
+  .item .icon {
+    width: 15%;
+  }
+  .item .descp {
+    width: 85%;
+  }
+  .pricing {
+    margin: 50px 7%;
+    height: 450px;
+    grid-template-columns: 31% 31% 31%;
+  }
+  .card {
+    height: 450px;
+  }
+  .card-header {
+    font-size: 12px;
+  }
+  .card-text {
+    font-size: 12px;
+    height: 450px;
+    text-align: center;
+  }
+
+  .card-text button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 7px;
+    width: 60%;
+    margin-top: 10px;
+  }
+  .card-text button:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .pricing img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar nav {
+    margin: 10px 5% 10px;
+    width: 90%;
+  }
+  .nav-bar .panel .list {
+    column-gap: 25px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .nav-bar nav .logo {
+    font-size: 20px;
+  }
+  nav .logo i {
+    margin-right: 8px;
+  }
+  .login-section .form-input {
+    width: 60%;
+    margin-bottom: 14px;
+  }
+  .login-section {
+    margin: 150px 14% auto;
+  }
+  .login-section .submit-button {
+    font-size: 13px;
+    width: 40%;
+    font-weight: 600;
+  }
+  main .features {
+    margin: 40px 7%;
+  }
+  .item .icon {
+    width: 20%;
+  }
+  .item .descp {
+    width: 80%;
+    font-size: 15px;
+  }
+  .pricing {
+    margin: 50px 7%;
+    height: 450px;
+    grid-template-columns: 31% 31% 31%;
+  }
+  .card {
+    height: 450px;
+  }
+  .card-header {
+    font-size: 12px;
+  }
+  .card-text {
+    font-size: 12px;
+    height: 350px;
+    text-align: center;
+  }
+
+  .card-text button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 7px;
+    width: 60%;
+    margin-top: 10px;
+  }
+  .card-text button:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .pricing img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-bar nav {
+    margin: 7px 3% 7px;
+    width: 94%;
+  }
+  .nav-bar .panel .list {
+    column-gap: 20px;
+    font-size: 14px;
+    font-weight: 450;
+  }
+  .nav-bar nav .logo {
+    font-size: 18px;
+  }
+  nav .logo i {
+    margin-right: 7px;
+  }
+  .login-section .form-input {
+    width: 65%;
+    margin-bottom: 10px;
+  }
+  .login-section {
+    margin: 150px 7% auto;
+  }
+  .login-section .submit-button {
+    font-size: 11px;
+    width: 45%;
+    font-weight: 500;
+  }
+  main .features {
+    margin: 35px 5%;
+  }
+  .item .icon {
+    width: 25%;
+  }
+  .item .descp {
+    width: 75%;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  #video {
+    height: 20%;
+    width: 50%;
+  }
+  .pricing {
+    margin: 50px 5%;
+    height: 450px;
+    grid-template-columns: 32% 32% 32%;
+  }
+  .card {
+    height: 450px;
+  }
+  .card-header {
+    font-size: 10px;
+  }
+  .card-text {
+    font-size: 10px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .card-text button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 10px;
+    width: 60%;
+  }
+  .card-text button:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .pricing img {
+    height: 150px;
+  }
+}
+/* *RESPONSİVE */
