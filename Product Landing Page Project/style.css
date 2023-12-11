@@ -226,7 +226,6 @@ main .features {
     height: 20px;
     font-size: 7px;
     width: 60%;
-    margin-top: 10px;
   }
   .card-text button:hover {
     transform: scale(1.1, 1.1);
@@ -296,7 +295,6 @@ main .features {
     height: 20px;
     font-size: 7px;
     width: 60%;
-    margin-top: 10px;
   }
   .card-text button:hover {
     transform: scale(1.1, 1.1);
